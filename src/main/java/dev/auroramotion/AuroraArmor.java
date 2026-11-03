@@ -2,7 +2,7 @@ package dev.auroramotion;
 
 import java.util.Map;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -62,11 +62,11 @@ public final class AuroraArmor {
     }
 
     public static void init() {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(entries -> {
-            entries.accept(HELMET);
-            entries.accept(CHESTPLATE);
-            entries.accept(LEGGINGS);
-            entries.accept(BOOTS);
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
+            output.accept(HELMET);
+            output.accept(CHESTPLATE);
+            output.accept(LEGGINGS);
+            output.accept(BOOTS);
         });
     }
 }
