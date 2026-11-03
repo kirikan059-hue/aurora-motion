@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "aurora_motion",
+  "version": "${version}",
+  "name": "Aurora Motion",
+  "description": "Плавные «бедроковские» анимации персонажей + светящаяся броня Aurora.",
+  "authors": [
+    "you"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.auroramotion.AuroraMotion"
+    ],
+    "client": [
+      "dev.auroramotion.client.AuroraMotionClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "aurora_motion.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

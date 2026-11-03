@@ -1,0 +1,6 @@
+{
+  "layers": {
+    "humanoid": [ { "texture": "aurora_motion:aurora" } ],
+    "humanoid_leggings": [ { "texture": "aurora_motion:aurora" } ]
+  }
+}
