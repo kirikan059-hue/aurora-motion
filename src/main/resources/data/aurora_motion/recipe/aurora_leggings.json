@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": ["DAD","D D","D D"],
+  "key": { "D": "minecraft:diamond", "A": "minecraft:amethyst_shard" },
+  "result": { "id": "aurora_motion:aurora_leggings", "count": 1 }
+}
