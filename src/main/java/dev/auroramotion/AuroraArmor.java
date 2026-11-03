@@ -33,8 +33,10 @@ public final class AuroraArmor {
     public static final TagKey<Item> REPAIR =
             TagKey.create(Registries.ITEM, id("repairs_aurora_armor"));
 
+    public static final int BASE_DURABILITY = 42;
+
     public static final ArmorMaterial MATERIAL = new ArmorMaterial(
-            42,
+            BASE_DURABILITY,
             Map.of(
                     ArmorType.HELMET, 3,
                     ArmorType.CHESTPLATE, 8,
@@ -57,7 +59,8 @@ public final class AuroraArmor {
         Item item = new Item(new Item.Properties()
                 .setId(key)
                 .rarity(Rarity.EPIC)
-                .humanoidArmor(MATERIAL, type));
+                .humanoidArmor(MATERIAL, type)
+                .durability(type.getDurability(BASE_DURABILITY)));
         return Registry.register(BuiltInRegistries.ITEM, key, item);
     }
 

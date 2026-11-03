@@ -3,6 +3,6 @@
   "minVersion": "0.8",
   "package": "dev.auroramotion.mixin.client",
   "compatibilityLevel": "JAVA_21",
-  "client": ["HumanoidModelMixin"],
+  "client": ["HumanoidModelMixin", "PlayerModelMixin"],
   "injectors": { "defaultRequire": 1 }
 }
